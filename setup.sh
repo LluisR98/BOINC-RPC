@@ -1,3 +1,6 @@
+#
+# Same commands as the manual method but in script.
+#
 sudo add-apt-repository universe
 sudo apt update
 sudo apt install python2 -y

@@ -1,3 +1,6 @@
+'''
+Original code for @maesoser in GitHub, a problem with importing StringIO libraries has been fixed. This is the full version of the code. The --output parameter prepares the code obtained from the RPC interface to an importable .txt file in node_exporter and Prometheus.
+'''
 from xml.etree import ElementTree
 from io import StringIO
 import socket
