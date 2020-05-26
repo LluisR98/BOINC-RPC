@@ -1,7 +1,7 @@
 # Data collector for BOINC using RPC.
-The code is written in ```Python 2```, the commands are fully functional. In case of returning error in the execution of the code run with ```python2``` and install the dependencies manually. The code has been executed and tested on the ```Ubuntu``` distribution in ```20.04 LTS``` on ```AMD64``` version and ```Raspberry Pi 4 pre-configured image```. In other distributions could be functional without having to modify the code, the installation of packages can be different depending on the distribution and the version.
+The code is written in Python 2, the commands are fully functional. In case of returning error in the execution of the code run with ```python2``` and install the dependencies manually. The code has been executed and tested on **Ubuntu 20.04 LTS** AMD64 version, Raspberry Pi 4 pre-configured image and 20.04 in WLS. In other distributions could be functional without having to modify the code, the installation of packages can be different depending on the distribution and the version.
 
-## Differences between ```boinc.py``` and ```boinc-min.py```:
+## Differences between boinc.py and boinc-min.py:
 The code ```boinc.py``` is the corrected version of the original author, the ```--output``` parameter allows to create a .txt file ready to be imported in Prometheus. The code ```boinc-min.py``` is the corrected version of the original author and minimized of the original code, it does not allow to create a .txt file ready to be imported in Prometheus.
 
 > **Possible issue**: The data collector does not always collect 100% of the BOINC tasks. This happens in the original version and the minimal version.
@@ -35,6 +35,8 @@ python boinc.py --nodes "[IPs]" --password "[PASS]"
     -   ```--port "9999"```: You can specify a communication port, by default ```31416```.
     -   ```--output "archivo.txt"```: You can specify if you want it to be saved.
 
+![Boinc.py](./media/boinc.png)
+
 ## How to run boinc-min.py:
 ```
 python boinc-min.py --nodes "[IPs]" --password "[PASS]"
@@ -45,8 +47,10 @@ python boinc-min.py --nodes "[IPs]" --password "[PASS]"
 - Extra:
     -   ```--port "9999"```: You can specify a communication port, by default ```31416```.
 
+![Boinc-min.py](./media/boinc-min.png)
+
 ## Credits:
 
-Thanks to the [maesoser](https://github.com/maesoser) user for sharing the code he uses for the export of BOINC data.
+Thanks to the [@maesoser](https://github.com/maesoser) user for sharing the code he uses for the export of BOINC data. The original code (at least until 05/26/2020) does not have a specific license, speaking with him has preferred to share it under MIT license.
 
 ![Made with Python](https://raw.githubusercontent.com/BraveUX/for-the-badge/dev/src/images/badges/made-with-python.svg) ![Made with love](https://raw.githubusercontent.com/BraveUX/for-the-badge/master/src/images/badges/built-with-love.svg)
