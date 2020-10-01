@@ -1,4 +1,4 @@
-# Data collector for BOINC using RPC.
+# Data collector for BOINC using RPC (via Docker).
 ***
 DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support pip 21.0 will remove support for this functionality.
 ***
@@ -34,7 +34,7 @@ python[2] boinc.py --nodes "[IPs]" --password "[PASS]"
 ```
 
 - [IPs]: Comma-separated IPs, e.g. ```--nodes "192.168.1.10,192.168.1.11,192.168.1.13"```. They have to be accessible, be careful with services denying requests (like iptables).
-- [PASS]: Communication password (same password that was used to create the Docker containers), ```--password "qwerty"```. Please do not use ```qwerty``` or similar as a password, use a more secure password... ;)
+- [PASS]: Communication password (same password that was used to create the Docker containers), e.g. ```--password "qwerty"```. Please do not use ```qwerty``` or similar as a password, use a more secure password... ;)
 - Extra:
     -   ```--port "9999"```: You can specify a communication port, by default ```31416```.
     -   ```--output "archivo.txt"```: You can specify if you want it to be saved.
@@ -47,7 +47,7 @@ python[2] boinc-min.py --nodes "[IPs]" --password "[PASS]"
 ```
 
 - [IPs]: Comma-separated IPs, e.g. ```--nodes "192.168.1.10,192.168.1.11,192.168.1.13"```.
-- [PASS]: Communication password, e.g. ```--password "qwerty"```. Please do not use ```qwerty``` or similar as a password, use a more secure password... ;)
+- [PASS]: Communication password (same password that was used to create the Docker containers), e.g. ```--password "qwerty"```. Please do not use ```qwerty``` or similar as a password, use a more secure password... ;)
 - Extra:
     -   ```--port "9999"```: You can specify a communication port, by default ```31416```.
 
