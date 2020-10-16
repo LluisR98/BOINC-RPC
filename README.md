@@ -23,7 +23,7 @@ sudo pip install tabulate
 
 ### Method 2, automated mode:
 ```
-cd ./GUIRPC-Py2
+cd ./BOINC-RPC
 chmod +x ./setup.sh
 ./setup.sh
 ```
