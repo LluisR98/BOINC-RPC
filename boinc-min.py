@@ -1,6 +1,3 @@
-'''
-Original code for @maesoser in GitHub, a problem with importing StringIO libraries has been fixed. This is the short version of the code. This version does NOT have the --output parameter that prepares the code obtained from the RPC interface to an importable .txt file in node_exporter and Prometheus.
-'''
 from xml.etree import ElementTree
 from io import StringIO
 import socket
@@ -141,6 +138,6 @@ if __name__ == "__main__":
                     data.append(row)
             rpc.close()
         except Exception as e:
-            print('Error receiving update from {0}: {1}'.format(node,e))
-    print(tabulate(data, headers=headers))
-    print("\n{0} tasks".format(len(data)))
+            print(('Error receiving update from {0}: {1}'.format(node,e)))
+    print((tabulate(data, headers=headers)))
+    print(("\n{0} tasks".format(len(data))))
