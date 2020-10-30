@@ -57,4 +57,4 @@ python[2] boinc-min.py --nodes "[IPs]" --password "[PASS]"
 
 Thanks to the [@maesoser](https://github.com/maesoser) user for sharing the code he uses for the export of BOINC data. The original code (at least until 26/05/2020) does not have a specific license, speaking with him has preferred to share it under MIT license.
 
-![Made with Python](https://raw.githubusercontent.com/BraveUX/for-the-badge/dev/src/images/badges/made-with-python.svg) ![Made with love](https://raw.githubusercontent.com/BraveUX/for-the-badge/master/src/images/badges/built-with-love.svg)
+![Made with Python](media/made-with-python.svg) ![Made with love](media/built-with-love.svg)
